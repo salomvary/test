@@ -13,4 +13,14 @@
 *   Green
 *   Blue
 
+## Code blocks are cool too ##
 
+Hello World! is rather difficult in Java:
+
+	class myfirstjavaprog
+	{  
+		public static void main(String args[])
+		{
+		   System.out.println("Hello World!");
+		}
+	}
