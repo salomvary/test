@@ -14,6 +14,15 @@
 	<aside class="box">
 		<h3>Something aside.</h3>
 		<br><br><br><br>
+		<ul>
+		{% for k in site %}	
+			<li>
+			{% for l in k %}
+				{{l}}
+			{% endfor %}
+			</li>
+		{% endfor %}
+		</ul>
 	</aside>
   <footer>
   </footer>
