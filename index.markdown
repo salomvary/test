@@ -2,10 +2,14 @@
 layout: default
 title: Hello World!
 ---
-Hello World!
+{% for post in site.posts %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.date | date_to_string }} &raquo; <a href=".{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<article>
+	<header>
+		<h2><a href=".{{ post.url }}">{{ post.title }}</a></h2>
+		<p>{{ post.date | date_to_string }}</p>
+	</header>
+	{{ post.content }}
+</article>
+
+{% endfor %}
