@@ -1,1 +1,1 @@
-document.body.innerHTML += '<br>1';
+document.body.innerHTML += '<br>2';
